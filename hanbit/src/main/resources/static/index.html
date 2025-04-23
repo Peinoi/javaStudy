@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlog - 여행 기록 웹</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Do Hyeon', sans-serif;
+            background: linear-gradient(to bottom, #aee1f9, #ffffff);
+        }
+
+        header {
+            background-color: #0088cc;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #006699;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        footer {
+            background-color: #eeeeee;
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background-color: #ff3f31;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Wanderlog ✈️</h1>
+    <p>여행의 순간을 기록하고 공유해요</p>
+</header>
+
+<nav>
+    <a href="#">홈</a>
+    <a href="#">여행기록</a>
+    <a href="backend.html">인기장소</a>
+    <a href="#">내 플래너</a>
+    <a href="#">문의하기</a>
+</nav>
+
+<section>
+    <div class="card">
+        <h2>나만의 여행 일지를 남겨보세요</h2>
+        <p>여행지에서의 하루, 사진과 함께 간직하고 싶은 기억을 기록해보세요.</p>
+        <a class="button" href="#">기록 시작하기</a>
+    </div>
+
+    <div class="card">
+        <h2>실시간 인기 여행지 🔥</h2>
+        <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f" alt="인기 여행지">
+        <p>지금 가장 많은 여행자들이 선택한 장소는 <strong>제주도</strong>! 풍경과 음식, 휴식이 어우러진 최고의 힐링 장소입니다.</p>
+    </div>
+
+    <div class="card">
+        <h2>플래너 기능 제공 📝</h2>
+        <p>여행 일정을 직접 계획하고, 일정을 캘린더로 시각화할 수 있어요.</p>
+        <a class="button" href="#">내 플래너 보기</a>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Wanderlog. All Rights Reserved. | Contact: travel@wanderlog.kr
+</footer>
+
+</body>
+</html>
