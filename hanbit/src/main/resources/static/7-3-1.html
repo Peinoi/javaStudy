@@ -1,21 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset ="utf-8">
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
 <script>
-    function onReadyStateChange(event) {
-        if(ajaxRequest.readyState === XMLHttpRequest.DONE){
-            if(ajaxRequest.status ===200){
-                console.log(ajaxRequest.responseText);
-            }else{
-                console.error('request failed');
-            }
-            }
-        }
+    function onReadyStateChange(event){
+  if(ajaxRequest.readyState === XMLHttpRequest.DONE) {
+      if(ajaxRequest.status === 200) {
+          console.log(ajaxRequest.responseText);
+      }else{
+          console.error('request failed');
+      }
+  }
+}
     const ajaxRequest = new XMLHttpRequest();
 
-    ajaxRequest.onreadystatechange  = onReadyStateChange;
+    ajaxRequest.onreadystatechange = onReadyStateChange;
     ajaxRequest.open('GET', '/get-with-no-parameter');
     ajaxRequest.send();
 </script>
